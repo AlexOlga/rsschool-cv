@@ -9,14 +9,15 @@
     <title>CV</title>
 </head>
 <body>
-    <header>
+    <header class="header">
  <div class="contener">
     <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
           <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
           <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#code" class="nav-link">Code Examples</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code examples</a></li>
           <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
           <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
           <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
@@ -25,7 +26,114 @@
  </div>
     </header>
     <main>
+    <div class="contener">
+        <section class="section-content" id="profile">
+            <img class="avatar"  src="./assets/foto.jpg" alt="foto">
+            <h1 class="main-title">Olga Alexandrova</h1>
+            <p>Junior Fronted Developer</p>
+        </section>
+        <section class="section-content" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="list">
+                <li>Location: Moscow;</li>
+                <li>Telegram: <a class="link-main" href="https://t.me/Alex_jkz">Alex_jkz</a>;</li>
+                <li>Discord: jkz(@AlexOlga);</li>
+                <li>GitHub: <a class="link-main" href="https://github.com/AlexOlga">AlexOlga</a>.</li>
+            </ul>
 
+        </section>
+        <section class="section-content" id="about">
+            <h2 class="section-title">About me</h2> 
+            <p> I want to learn Front-End Development. My goal is to gain knowledge in the field of front-end development.</p>
+
+        </section>
+
+ <section class="section-content" id="skills">
+    <h2 class="section-title"> Skills</h2> 
+    <ul class="list">
+        <li>HTML, CSS; </li>
+        <li>JavaScript Basics;</li>
+        <li> Adobe Photoshop, Figma (for web development); </li>
+    </ul>
+ </section>
+ <section class="section-content" id="code">
+    <h2 class="section-title"> Code examples</h2> 
+    <p> <b>Task:</b> Your task is to implement the so-called 'towel sort' algorithm. TtowelSort function should expect matrix of any shape for example:</p>
+    <pre>
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ],
+]
+Following matrix should be 'sorted' to:
+[1, 2, 3, 6, 5, 4, 7, 8, 9 ]
+    </pre>
+    <div class="code-exampl">  
+        <pre>
+            <code>
+                function towelSort (matrix) {
+                    if ( arguments.length==0){return []}
+                    else{
+                    let newArr=[];
+                   if ( matrix==[]) {return []}
+                   else{
+                    for (let i=0; i<matrix.length; i++){
+                        matrix[i].sort((a, b) => a - b );
+                          if (i%2 != 0){
+                        matrix[i].reverse();
+                        }
+                    }
+                    matrix.forEach(item => { newArr=newArr.concat(item);});
+                    return newArr;}
+                  }
+                  }
+            </code>
+        </pre>
+    </div>
+
+ </section>
+ <section class="section-content" id="projects">
+    <h2 class="section-title">Educational projects</h2> 
+    <ul class="list-project">
+        <li class="project-item">
+            <a class="project-link" href="https://rolling-scopes-school.github.io/alexolga-JSFEPRESCHOOL/js30-eco-sounds/">
+                <img class="project-img" src="./assets/eco-sound.jpg" alt="eco-sound preview">
+                <h3 class="project-title">Eco-sound</h3>
+            </a>
+           
+        </li>
+        <li class="project-item">
+            <a class="project-link" href="https://rolling-scopes-school.github.io/alexolga-JSFEPRESCHOOL/image-galery/">
+                <img class="project-img" src="./assets/image-gallery.jpg" alt="image-gallery preview">
+                <h3 class="project-title">Image-gallery</h3>
+            </a>           
+        </li>
+        <li class="project-item">
+            <a class="project-link" href="https://rolling-scopes-school.github.io/alexolga-JSFEPRESCHOOL/memory-game/">
+                <img class="project-img" src="./assets/memory.jpg" alt="memory-game preview">
+                <h3 class="project-title">Memory-game</h3>
+            </a>           
+        </li>
+    </ul>
+
+ </section>
+ <section class="section-content" id="education">
+    <h2 class="section-title">Education</h2> 
+    <ul class="list">
+        <li>Saratov State University (Faculty of Mathematics and Mechanics);</li>
+        <li>RS SCHOOL JS/FE Pre-Shool 2022;</li>
+        <li>RS SCHOOL JS/FE 2022Q1 (training ongoing).</li>
+    </ul>
+ </section>
+ <section class="section-content" id="languages">
+    <h2 class="section-title">Languages</h2> 
+    <ul class="list">
+        <li>Russian - Native;</li>
+        <li>English (Beginner).</li>
+      
+    </ul>
+ </section>
+</div>
     </main>
     <footer>
 

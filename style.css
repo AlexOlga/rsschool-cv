@@ -6,6 +6,7 @@ html {
 }
 :root {
   --color-blue: #2aaee7;
+  --color-hover: #122a94;
 }
 body {
   display: flex;
@@ -18,8 +19,9 @@ body {
   font-size: 20px;
   line-height: 2;
 }
-header {
+.header {
   background-color: var(--color-blue);
+  border-radius: 10px;
 }
 .container {
   max-width: 1440px;
@@ -35,7 +37,55 @@ header {
 .nav-link {
   text-decoration: none;
   color: white;
+  transition: color 0.5s;
 }
 .nav-link:hover {
-  color: #122a94;
+  color: var(--color-hover);
+}
+.section-content {
+  width: 50%;
+  padding: 30px;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.main-title {
+  color: var(--color-blue);
+  font-size: 32px;
+}
+.link-main {
+  color: var(--color-blue);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.link-main:hover {
+  color: var(--color-hover);
+}
+.section-title {
+  color: var(--color-blue);
+  font-size: 24px;
+}
+.list-project {
+  list-style: none;
+}
+.project-link {
+  text-decoration: none;
+  color: grey;
+}
+.project-img {
+  width: 100%;
+  height: max-content;
+  object-fit: contain;
+  box-shadow: 0 0 0 4px rgb(0 0 0 / 10%);
+}
+.project-img:hover {
+  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.3);
+}
+.project-title {
+  font-size: 20px;
+  margin: 0;
+  padding: 0 10px;
 }
