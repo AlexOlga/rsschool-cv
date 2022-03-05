@@ -163,6 +163,17 @@ footer {
   transition: 0.3s;
   cursor: pointer;
 }
+.topbutton {
+  position: fixed;
+
+  right: 10px;
+  top: 80vh;
+  text-decoration: none;
+}
+.topico {
+  width: 100px;
+  height: 80px;
+}
 @media (max-width: 768px) {
   .nav-list {
     flex-direction: column;
