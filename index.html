@@ -14,19 +14,20 @@
     <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
           <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
           <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
           <li class="nav-item"><a href="#code" class="nav-link">Code examples</a></li>
           <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+         
         </ul>
       </nav>
  </div>
     </header>
     <main>
-    <div class="contener">
+    <div class="contener main-contener">
         <section class="section-content" id="profile">
             <img class="avatar"  src="./assets/foto.jpg" alt="foto">
             <h1 class="main-title">Olga Alexandrova</h1>
@@ -56,7 +57,23 @@
         <li> Adobe Photoshop, Figma (for web development); </li>
     </ul>
  </section>
- <section class="section-content" id="code">
+ <section class="section-content" id="education">
+    <h2 class="section-title">Education</h2> 
+    <ul class="list">
+        <li>Saratov State University (Faculty of Mathematics and Mechanics);</li>
+        <li>RS SCHOOL JS/FE Pre-Shool 2022;</li>
+        <li>RS SCHOOL JS/FE 2022Q1 (training ongoing).</li>
+    </ul>
+ </section>
+ <section class="section-content" id="languages">
+    <h2 class="section-title">Languages</h2> 
+    <ul class="list">
+        <li>Russian - Native;</li>
+        <li>English (Beginner).</li>      
+    </ul>
+ </section>
+ 
+ <section class="section-content-big" id="code">
     <h2 class="section-title"> Code examples</h2> 
     <p> <b>Task:</b> Your task is to implement the so-called 'towel sort' algorithm. TtowelSort function should expect matrix of any shape for example:</p>
     <pre>
@@ -69,32 +86,36 @@ Following matrix should be 'sorted' to:
 [1, 2, 3, 6, 5, 4, 7, 8, 9 ]
     </pre>
     <div class="code-exampl">  
-        <pre>
-            <code>
-                function towelSort (matrix) {
-                    if ( arguments.length==0){return []}
-                    else{
-                    let newArr=[];
-                   if ( matrix==[]) {return []}
-                   else{
-                    for (let i=0; i<matrix.length; i++){
-                        matrix[i].sort((a, b) => a - b );
-                          if (i%2 != 0){
-                        matrix[i].reverse();
-                        }
-                    }
-                    matrix.forEach(item => { newArr=newArr.concat(item);});
-                    return newArr;}
-                  }
-                  }
-            </code>
-        </pre>
+        <code>
+        <pre >            
+function towelSort (matrix) {
+    if ( arguments.length==0) {return []}
+    else{
+        let newArr = [];
+        if ( matrix == []) {return []}
+        else{
+            for (let i=0; i &lt; matrix.length; i++){
+                matrix[i].sort((a, b) =&lt; a - b );
+                if (i%2 != 0) { matrix[i].reverse(); }
+            }
+            matrix.forEach(item => { newArr = newArr.concat(item);});
+            return newArr;}
+        }
+}                  </pre>
+</code> 
     </div>
 
  </section>
- <section class="section-content" id="projects">
+ <section class="section-content-big" id="projects">
     <h2 class="section-title">Educational projects</h2> 
     <ul class="list-project">
+        <li class="project-item">
+            <a class="project-link" href="https://rolling-scopes-school.github.io/alexolga-JSFEPRESCHOOL/portfolio/">
+                <img class="project-img" src="./assets/portfolio.jpg" alt="portfolio preview">
+                <h3 class="project-title">Portfolio</h3>
+            </a>
+           
+        </li>
         <li class="project-item">
             <a class="project-link" href="https://rolling-scopes-school.github.io/alexolga-JSFEPRESCHOOL/js30-eco-sounds/">
                 <img class="project-img" src="./assets/eco-sound.jpg" alt="eco-sound preview">
@@ -117,25 +138,20 @@ Following matrix should be 'sorted' to:
     </ul>
 
  </section>
- <section class="section-content" id="education">
-    <h2 class="section-title">Education</h2> 
-    <ul class="list">
-        <li>Saratov State University (Faculty of Mathematics and Mechanics);</li>
-        <li>RS SCHOOL JS/FE Pre-Shool 2022;</li>
-        <li>RS SCHOOL JS/FE 2022Q1 (training ongoing).</li>
-    </ul>
- </section>
- <section class="section-content" id="languages">
-    <h2 class="section-title">Languages</h2> 
-    <ul class="list">
-        <li>Russian - Native;</li>
-        <li>English (Beginner).</li>
-      
-    </ul>
- </section>
+ 
 </div>
     </main>
     <footer>
+        <div class="contener footer-contener">
+            <a class="footer-link" href="https://github.com/AlexOlga">
+                <img class="footer-git" src="./assets/png-github.png" alt="github logo">
+            </a>
+            <p>2022</p>
+            <a class="footer-link" href="https://rs.school/js/">
+                <img class="footer-rss" src="./assets/rss.svg" alt="rsschool logo">
+            </a>
+
+        </div>
 
     </footer>
     
