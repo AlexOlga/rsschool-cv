@@ -19,9 +19,10 @@ body {
   font-size: 20px;
   line-height: 2;
 }
+
 .header {
   background-color: var(--color-blue);
-  border-radius: 10px;
+  margin: 0;
 }
 .contener {
   max-width: 1440px;
@@ -46,9 +47,10 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .section-content {
   width: 50%;
-  padding: 30px;
+  padding: 15px;
 }
 .header-avatar {
   padding-left: 30px;
@@ -63,6 +65,7 @@ body {
 .main-title {
   color: var(--color-blue);
   font-size: 32px;
+  margin: 0px;
 }
 .link-main {
   color: var(--color-blue);
@@ -75,15 +78,23 @@ body {
 .section-title {
   color: var(--color-blue);
   font-size: 24px;
+  margin: 10px 0px;
+}
+.list {
+  margin: 10px 0px;
 }
 pre {
   margin: 0;
   padding: 0;
 }
-
 .list-project {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
   list-style: none;
 }
+
 .project-link {
   text-decoration: none;
   color: grey;
@@ -109,7 +120,7 @@ pre {
 }
 .section-content-big {
   width: 100%;
-  padding: 30px;
+  padding: 15px;
 }
 .code-exampl {
   background-color: rgb(206, 203, 203, 0.5);
@@ -117,19 +128,16 @@ pre {
   padding: 20px;
   margin: 0 auto;
 }
-.list-project {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0;
+
+footer {
+  background-color: var(--color-blue);
 }
 .footer-contener {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: var(--color-blue);
-  border-radius: 10px;
+
   color: #fff;
   padding: 10px;
 }
@@ -172,6 +180,9 @@ pre {
     margin: 0;
     font-size: 14px;
   }
+  .list-project {
+    justify-content: space-around;
+  }
 }
 @media (max-width: 425px) {
   .code-exampl {
@@ -186,5 +197,8 @@ pre {
   .header-avatar {
     padding-left: 10px;
     text-align: center;
+  }
+  .list-project {
+    justify-content: center;
   }
 }
