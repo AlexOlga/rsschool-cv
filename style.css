@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 * {
   box-sizing: border-box;
@@ -16,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Verdana", sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 2;
 }
 
@@ -65,7 +66,7 @@ body {
 }
 .main-title {
   color: var(--color-blue);
-  font-size: 32px;
+  font-size: 3rem;
   margin: 0px;
 }
 .link-main {
@@ -78,7 +79,7 @@ body {
 }
 .section-title {
   color: var(--color-blue);
-  font-size: 24px;
+  font-size: 2.4rem;
   margin: 10px 0px;
 }
 .list {
@@ -114,7 +115,7 @@ pre {
   box-shadow: 0px 0px 7px 7px rgba(42, 174, 231, 0.3);
 }
 .project-title {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 200;
   line-height: 1.5;
   margin: 0;
@@ -168,9 +169,8 @@ footer {
 }
 .topbutton {
   position: fixed;
-
   right: 10px;
-  top: 80vh;
+  bottom: 120px;
   text-decoration: none;
 }
 .topico {
@@ -192,14 +192,21 @@ footer {
   .code-exampl {
     padding: 10px;
     margin: 0;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .list-project {
     justify-content: space-around;
     align-items: center;
   }
+  .topico {
+    width: 50px;
+    height: 40px;
+  }
 }
 @media (max-width: 425px) {
+  html{
+    font-size: 7px;
+  }  
   .code-exampl {
     padding: 5px;
     margin: 0;
@@ -207,8 +214,11 @@ footer {
   }
 
   .header-avatar {
-    padding-left: 10px;
+    padding: 0px;
     text-align: center;
+  }
+  .avatar{
+    width: 100%;
   }
   .project-item {
     margin-right: 0;

@@ -4,18 +4,20 @@
 
 - **Location:** Moscow
 - **Telegram:** Alex_jkz
-- **Discord:** jkz(@AlexOlga)
 - **GitHub:** [AlexOlga](https://github.com/AlexOlga)
 
 ### About me
 
-I want to learn Front-End Development. My goal is to gain knowledge in the field of front-end development.
+Hi! I’m a junior frontend developer. I  want to apply my knowledge to the real products.
 
 ### Skills
 
 - HTML, CSS;
 - JavaScript Basics;
-- Redmine
+- TypeScript;
+- React;
+- Redux;
+- Git;
 - Adobe Photoshop, Figma (for web development);
 
 ### Code Examples
@@ -34,21 +36,16 @@ Following matrix should be 'sorted' to:
 [1, 2, 3, 6, 5, 4, 7, 8, 9 ]
 
 ```
-function towelSort (matrix) {
-  if ( arguments.length==0){return []}
-  else{
+function towelSort(matrix) {
+  if ( arguments.length === 0 ) {return []};
+  if ( matrix === []) {return []};
   let newArr=[];
- if ( matrix==[]) {return []}
- else{
-  for (let i=0; i<matrix.length; i++){
-      matrix[i].sort((a, b) => a - b );
-        if (i%2 != 0){
-      matrix[i].reverse();
-      }
+  for ( let i = 0; i < matrix.length; i++) {
+    matrix[i].sort((a, b) => a - b );
+    if ( i%2 != 0)  matrix[i].reverse();      
   }
-  matrix.forEach(item => { newArr=newArr.concat(item);});
-  return newArr;}
-}
+  matrix.forEach( item => { newArr = newArr.concat(item);});
+  return newArr;
 }
 ```
 
@@ -63,9 +60,12 @@ function towelSort (matrix) {
 - Saratov State University
   - Faculty of Mathematics and Mechanics
 - RS SCHOOL JS/FE Pre-Shool 2022
-- RS SCHOOL JS/FE 2022Q1 (training ongoing)
+  - [Certificate] (https://app.rs.school/certificate/d9uh1rw9)
+- RS SCHOOL JS/FE 2022 Q1 
+  - [Certificate] (https://app.rs.school/certificate/155ye2pt)
+- RS SCHOOL React 2022 Q3
 
 ### Languages
 
 - Russian - Native
-- English (A0)
+- English - Elementary (I am learning English with a teacher at the Skyeng School)
