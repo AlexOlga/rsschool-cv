@@ -1,155 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./assets/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/favicon.ico" />
     <title>CV</title>
-</head>
-<body>
-  <header class="header">
-    <div class="contener ">
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
-          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
-          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#code" class="nav-link">Code examples</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+  </head>
+  <body>
+    <header class="header">
+      <div class="contener">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#languages" class="nav-link">Languages</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="contener">
+        <section class="section-content flex-contener">
+          <div class="profile__avatar column">
+            <img class="avatar" src="./assets/photo.jpg" alt="photo profile" />
+          </div>
+          <div class="profile__name column">
+            <h1 class="main-title">Olga Alexandrova</h1>
+            <p>Junior Fronted Developer</p>
+          </div>
+        </section>
+        <section class="about flex-contener">
+          <div class="about__info column">
+            <h2 class="section-title">About me</h2>
+            <p>
+              Hi! I’m a junior frontend developer. I want to apply my knowledge
+              to the real products.
+            </p>
+          </div>
+          <div class="about__contacts column" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="list">
+              <li>Location: Moscow;</li>
+              <li>
+                Telegram:
+                <a class="link-main" href="https://t.me/Alex_jkz">Alex_jkz</a>;
+              </li>
+              <li>
+                GitHub:
+                <a class="link-main" href="https://github.com/AlexOlga"
+                  >AlexOlga</a
+                >.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="skills section-content" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="skills-list">
+            <li class="skills-list__item">
+              HTML, CSS (semantic, responsive, Perfect Pixel);
+            </li>
+            <li class="skills-list__item">JavaScript/TypeScript;</li>
+            <li class="skills-list__item">
+              React (react-router, react-hooks, react-hook-form);
+            </li>
+            <li class="skills-list__item">Redux Toolkit;</li>
+            <li class="skills-list__item">Version control: Git;</li>
+            <li class="skills-list__item">Module Bundlers: Webpack;</li>
+            <li class="skills-list__item">
+              Adobe Photoshop, Figma (for web development);
+            </li>
+          </ul>
+        </section>
+        <section class="section-content" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul class="education-list">
+            <li class="education-list__item">
+              Saratov State University (Faculty of Mathematics and Mechanics);
+            </li>
+            <li class="education-list__item">React 2022 Q3</li>
+            <li class="education-list__item">
+              RS SCHOOL JS/FE 2022Q1 (<a
+                class="link-main"
+                href="https://app.rs.school/certificate/155ye2pt"
+                >Certificate</a
+              >);
+            </li>
+            <li class="education-list__item">
+              RS SCHOOL JS/FE Pre-Shool 2022(<a
+                class="link-main"
+                href="https://app.rs.school/certificate/d9uh1rw9"
+                >Certificate</a
+              >).
+            </li>
+          </ul>
+        </section>
+        <section class="section-content" id="languages">
+          <h2 class="section-title">Languages</h2>
+          <ul class="list">
+            <li class="list__item">Russian - Native;</li>
+            <li class="list__item">
+              English - Elementary (I am learning English with a teacher at the
+              Skyeng).
+            </li>
+          </ul>
+        </section>
+
+        <section class="section-content" id="projects">
+          <h2 class="section-title">Projects</h2>
+          <ul class="list-project">
+            <li class="project-item">
+              <div class="project-item__description">
+                <h3 class="project-title">Memory-game</h3>
+                <p>Online-game.Website created with HTML, CSS, JS.</p>
+                <a
+                  class="github-link"
+                  href="https://github.com/AlexOlga/Memory-game"
+                >
+                  <div class="github-link__text">Source</div>
+                  <div class="github-link__ico">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 496 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="project-item__link">
+                <a
+                  class="project-link"
+                  href="https://alexolga.github.io/Memory-game/"
+                >
+                  <img
+                    class="project-img"
+                    src="./assets/memory.jpg"
+                    alt="memory-game preview"
+                  />
+                </a>
+              </div>
+              </li>
+              <li class="project-item">
+                <div class="project-item__description">
+                  <h3 class="project-title">Virtual keyboard</h3>
+                  <p>Website created with HTML, CSS, JS, Eslint, Webpack.</p>
+                  <a
+                    class="github-link"
+                    href="https://github.com/AlexOlga/KeyboardRS"
+                  >
+                    <div class="github-link__text">Source</div>
+                    <div class="github-link__ico">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 496 512"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="project-item__link">
+                  <a
+                    class="project-link"
+                    href="https://alexolga.github.io/KeyboardRS/"
+                  >
+                    <img
+                      class="project-img"
+                      src="./assets/virtual-keyboard.jpg"
+                      alt="virtual-keyboard preview"
+                    />
+                  </a>
+                </div>            
+             
+            </li>
+            <li class="project-item">
+              <div class="project-item__description">
+                <h3 class="project-title">Online store</h3>
+                <p>Website created with HTML, CSS, TypeScript, Eslint, Webpack.</p>
+                <a
+                  class="github-link"
+                  href="https://github.com/AlexOlga/store"
+                >
+                  <div class="github-link__text">Source</div>
+                  <div class="github-link__ico">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 496 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="project-item__link">
+                <a
+                  class="project-link"
+                  href="https://AlexOlga.github.io/store/"
+                >
+                  <img
+                    class="project-img"
+                    src="./assets/online-store.jpg"
+                    alt="virtual-keyboard preview"
+                  />
+                </a>
+              </div>            
+           
+          </li>
+          <li class="project-item">
+            <div class="project-item__description">
+              <h3 class="project-title">Ricki and Morty</h3>
+              <p>Website created with React, TypeScript. Use Redux State Management. Api calls from  Redux Thunk</p>
+              <a
+                class="github-link"
+                href="https://github.com/AlexOlga/RickiAndMorty"
+              >
+                <div class="github-link__text">Source</div>
+                <div class="github-link__ico">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 496 512"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="project-item__link">
+              <a
+                class="project-link"
+                href="https://AlexOlga.github.io/RickiAndMorty/"
+              >
+                <img
+                  class="project-img"
+                  src="./assets/rickAndMorty.jpg"
+                  alt="virtual-keyboard preview"
+                />
+              </a>
+            </div>            
          
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="contener main-contener">
-      <section class="section-content" id="profile">
-        <p class="header-avatar">
-          <img class="avatar"  src="./assets/foto.jpg" alt="foto">
-        </p>           
-        <h1 class="main-title">Olga Alexandrova</h1>
-        <p>Junior Fronted Developer</p>
-      </section>
-      <section class="section-content" id="contacts">
-        <h2 class="section-title">Contacts</h2>
-        <ul class="list">
-          <li>Location: Moscow;</li>
-          <li>Telegram: <a class="link-main" href="https://t.me/Alex_jkz">Alex_jkz</a>;</li>
-          <li>GitHub: <a class="link-main" href="https://github.com/AlexOlga">AlexOlga</a>.</li>
-        </ul>
-      </section>
-      <section class="section-content" id="about">
-        <h2 class="section-title">About me</h2> 
-        <p>Hi! I’m a junior frontend developer. I  want to apply my knowledge to the real products.</p>
-      </section>
-      <section class="section-content" id="skills">
-        <h2 class="section-title"> Skills</h2> 
-        <ul class="list">
-          <li>HTML, CSS; </li>
-          <li>JavaScript Basics;</li>
-          <li>TypeScript;</li>
-          <li>React;</li>
-          <li>Redux;</li>
-          <li>Git;</li>
-          <li>Webpack;</li>
-          <li> Adobe Photoshop, Figma (for web development); </li>
-        </ul>
-      </section>
-      <section class="section-content" id="education">
-        <h2 class="section-title">Education</h2> 
-          <ul class="list">
-            <li>Saratov State University (Faculty of Mathematics and Mechanics);</li>
-            <li>RS SCHOOL JS/FE Pre-Shool 2022;</li>
-            <li>RS SCHOOL JS/FE 2022Q1 (training ongoing).</li>
+        </li>
           </ul>
-       </section>
-       <section class="section-content" id="languages">
-          <h2 class="section-title">Languages</h2> 
-          <ul class="list">
-            <li>Russian - Native;</li>
-            <li>English - Elementary (I am learning English with a teacher at the Skyeng).</li>      
-          </ul>
-       </section>
- 
-       <section class="section-content-big" id="code">
-        <h2 class="section-title"> Code examples</h2> 
-        <p> <b>Task:</b> Your task is to implement the so-called 'towel sort' algorithm. TtowelSort function should expect matrix of any shape for example:</p>
-        <pre>
-[
- [ 1, 2, 3 ],
- [ 4, 5, 6 ],
- [ 7, 8, 9 ],
-]
-</pre>
-Following matrix should be 'sorted' to:
-[1, 2, 3, 6, 5, 4, 7, 8, 9 ]
-    
-    <div class="code-exampl">  
-      <pre ><code>                  
-function towelSort(matrix) {
-    if ( arguments.length === 0 ) {return []};
-    if ( matrix === []) {return []};
-    let newArr=[];
-    for ( let i = 0; i < matrix.length; i++) {
-        matrix[i].sort((a, b) => a - b );
-        if ( i%2 != 0)  matrix[i].reverse();      
-    }
-    matrix.forEach( item => { newArr = newArr.concat(item);});
-    return newArr;
-}
-</code>             
- </pre>
-    </div>
-       </section>
-       <section class="section-content-big" id="projects">
-        <h2 class="section-title">Educational projects</h2> 
-        <ul class="list-project">
-          <li class="project-item">
-            <a class="project-link" href="https://rolling-scopes-school.github.io/alexolga-JSFEPRESCHOOL/portfolio/">
-              <img class="project-img" src="./assets/portfolio.jpg" alt="portfolio preview">
-              <h3 class="project-title">Portfolio</h3>
-            </a>           
-          </li>
-          <li class="project-item">
-            <a class="project-link" href="https://rolling-scopes-school.github.io/alexolga-JSFEPRESCHOOL/js30-eco-sounds/">
-              <img class="project-img" src="./assets/eco-sound.jpg" alt="eco-sound preview">
-              <h3 class="project-title">Eco-sound</h3>
-            </a>           
-          </li>
-          <li class="project-item">
-            <a class="project-link" href="https://rolling-scopes-school.github.io/alexolga-JSFEPRESCHOOL/image-galery/">
-              <img class="project-img" src="./assets/image-gallery.jpg" alt="image-gallery preview">
-              <h3 class="project-title">Image-gallery</h3>
-            </a>           
-          </li>
-          <li class="project-item">
-            <a class="project-link" href="https://rolling-scopes-school.github.io/alexolga-JSFEPRESCHOOL/memory-game/">
-              <img class="project-img" src="./assets/memory.jpg" alt="memory-game preview">
-              <h3 class="project-title">Memory-game</h3>
-            </a>           
-          </li>
-        </ul>
-      </section> 
-    </div>
-  </main>
-  <footer>
-    <div class="contener footer-contener">
-      <a class="footer-link" href="https://github.com/AlexOlga">
-        <img class="footer-git" src="./assets/png-github.png" alt="github logo">
-      </a>
-      <p>2022</p>
-      <a class="footer-link" href="https://rs.school/js/">
-        <img class="footer-rss" src="./assets/rss.svg" alt="rsschool logo">
-      </a>
-    </div>
-  </footer>
-  <a href="#" class="topbutton">
-    <img class="topico" src="./assets/up.png" alt="up">
-  </a>    
-</body>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="contener footer-contener">
+        <a class="footer-link" href="https://github.com/AlexOlga">GitHub </a>
+        <p>2022</p>
+        <a class="footer-link" href="https://rs.school/js/">
+          <img class="footer-rss" src="./assets/rss.svg" alt="rsschool logo" />
+        </a>
+      </div>
+    </footer>
+    <a href="#" class="topbutton">
+      <img class="topico" src="./assets/up.png" alt="up" />
+    </a>
+  </body>
 </html>
